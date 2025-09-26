@@ -28,5 +28,5 @@ jobs:
     - name: Upload executable
       uses: actions/upload-artifact@v4
       with:
-        name: tkinter_calculator_exe
+        name: tkinter_calculator_grid_exe
         path: dist/tkinter_calculator_grid.exe
