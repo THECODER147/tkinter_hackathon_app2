@@ -12,6 +12,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: List files for debugging
+        run: dir  # Use 'ls' on Linux, 'dir' on Windows
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -26,5 +29,5 @@ jobs:
       - name: Upload executable
         uses: actions/upload-artifact@v4
         with:
-          name: tkinter_calculator_grid_exe
+          name: tkinter_calculator_exe
           path: dist/tkinter_calculator_grid.exe
